@@ -132,10 +132,8 @@ Then segment and track using the same functions.
 
 If you use this code for research or publication, please cite:
 
-> Qin, H. (2025). *Physics-informed geometric modeling of biological aging and information flow in cell populations.* Salk Institute for Biological Studies.
+> Qin, H. (2025). *Active cell divisions generate fourfold orientationally ordered phase in living tissue.* Salk Institute for Biological Studies.
 
 ---
 
-## 📬 Contact
 
-For questions or collaborations, please contact **Haodong Qin** at [haodongqin@ucsd.edu](mailto:haodongqin@ucsd.edu).
