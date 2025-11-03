@@ -59,6 +59,12 @@ R_seg = segment_cells_from_ilastik('somite_july_short_binary.h5', ...
 
 ---
 
+## 🧬 Example Segmentation Result
+
+The figure below shows an example of cell segmentation output produced by the pipeline:
+
+![Cell segmentation example](docs/cell_segmentation_example.png)
+
 ## 🔗 Stage 2 — Cell Lineage Tracking
 
 ```matlab
@@ -100,33 +106,8 @@ R_track = track_cell_lineages(R_seg.centroids_roi_um, ...
 
 ---
 
-## 📊 Example Output
 
-| Step         | Description                        | Output                                         |
-| ------------ | ---------------------------------- | ---------------------------------------------- |
-| Segmentation | Binary and labeled masks per frame | ![segmentation](docs/example_segmentation.png) |
-| Tracking     | Colored cell trajectories          | ![tracking](docs/example_tracking.png)         |
 
----
-
-## 🧪 Testing with Synthetic Data
-
-To test the pipeline without biological data, use synthetic Gaussian blob movies:
-
-```matlab
-[Y, X, T] = deal(128, 128, 10);
-[Xg, Yg] = meshgrid(1:X, 1:Y);
-mov = zeros(Y, X, T);
-for t = 1:T
-    cx = 30 + 5*t; cy = 64; sigma = 5;
-    mov(:,:,t) = exp(-((Xg-cx).^2 + (Yg-cy).^2)/(2*sigma^2));
-end
-imwrite(uint8(255*mov(:,:,1)/max(mov(:))), 'synthetic.tif');
-```
-
-Then segment and track using the same functions.
-
----
 
 ## 🧾 Citation
 
