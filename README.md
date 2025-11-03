@@ -63,7 +63,7 @@ R_seg = segment_cells_from_ilastik('somite_july_short_binary.h5', ...
 
 The figure below shows an example of cell segmentation output produced by the pipeline:
 
-![Cell segmentation example](docs/cell_segmentation_example.png)
+![Cell segmentation example](docs/cell_segmentation_example.tif)
 
 ## 🔗 Stage 2 — Cell Lineage Tracking
 
