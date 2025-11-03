@@ -112,6 +112,7 @@ R_track = track_cell_lineages(R_seg.centroids_roi_um, ...
 ## 🧾 Citation
 If you use this code for research or publication, please cite:
 Cislo, D.J., Yang, F., Qin, H. et al. Active cell divisions generate fourfold orientationally ordered phase in living tissue. Nature Physics 19, 1201–1210 (2023). https://doi.org/10.1038/s41567-023-02025-3
+
 ---
 
 
